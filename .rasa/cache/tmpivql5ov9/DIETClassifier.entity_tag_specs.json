@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-APPIONTMENT_TIME",
+      "2": "I-APPIONTMENT_TIME",
+      "3": "L-APPIONTMENT_TIME",
+      "4": "U-APPIONTMENT_TIME",
+      "5": "B-HOSPITAL_NAME",
+      "6": "I-HOSPITAL_NAME",
+      "7": "L-HOSPITAL_NAME",
+      "8": "U-HOSPITAL_NAME",
+      "9": "B-MEDICINE",
+      "10": "I-MEDICINE",
+      "11": "L-MEDICINE",
+      "12": "U-MEDICINE",
+      "13": "B-USER_NAME",
+      "14": "I-USER_NAME",
+      "15": "L-USER_NAME",
+      "16": "U-USER_NAME",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-APPIONTMENT_TIME": 1,
+      "I-APPIONTMENT_TIME": 2,
+      "L-APPIONTMENT_TIME": 3,
+      "U-APPIONTMENT_TIME": 4,
+      "B-HOSPITAL_NAME": 5,
+      "I-HOSPITAL_NAME": 6,
+      "L-HOSPITAL_NAME": 7,
+      "U-HOSPITAL_NAME": 8,
+      "B-MEDICINE": 9,
+      "I-MEDICINE": 10,
+      "L-MEDICINE": 11,
+      "U-MEDICINE": 12,
+      "B-USER_NAME": 13,
+      "I-USER_NAME": 14,
+      "L-USER_NAME": 15,
+      "U-USER_NAME": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

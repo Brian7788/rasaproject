@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-APPIONTMENT_TIME",
+      "2": "I-APPIONTMENT_TIME",
+      "3": "L-APPIONTMENT_TIME",
+      "4": "U-APPIONTMENT_TIME",
+      "5": "B-HOSPITAL_NAME",
+      "6": "I-HOSPITAL_NAME",
+      "7": "L-HOSPITAL_NAME",
+      "8": "U-HOSPITAL_NAME",
+      "9": "B-MEDICINE",
+      "10": "I-MEDICINE",
+      "11": "L-MEDICINE",
+      "12": "U-MEDICINE",
+      "13": "B-USER[_NAME",
+      "14": "I-USER[_NAME",
+      "15": "L-USER[_NAME",
+      "16": "U-USER[_NAME",
+      "17": "B-USER_NAME",
+      "18": "I-USER_NAME",
+      "19": "L-USER_NAME",
+      "20": "U-USER_NAME",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-APPIONTMENT_TIME": 1,
+      "I-APPIONTMENT_TIME": 2,
+      "L-APPIONTMENT_TIME": 3,
+      "U-APPIONTMENT_TIME": 4,
+      "B-HOSPITAL_NAME": 5,
+      "I-HOSPITAL_NAME": 6,
+      "L-HOSPITAL_NAME": 7,
+      "U-HOSPITAL_NAME": 8,
+      "B-MEDICINE": 9,
+      "I-MEDICINE": 10,
+      "L-MEDICINE": 11,
+      "U-MEDICINE": 12,
+      "B-USER[_NAME": 13,
+      "I-USER[_NAME": 14,
+      "L-USER[_NAME": 15,
+      "U-USER[_NAME": 16,
+      "B-USER_NAME": 17,
+      "I-USER_NAME": 18,
+      "L-USER_NAME": 19,
+      "U-USER_NAME": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

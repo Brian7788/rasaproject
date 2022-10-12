@@ -1,0 +1,73 @@
+version: "3.0"
+
+stories:
+
+- story: location
+  steps:
+  - intent: hospital_location
+  - action: utter_location
+  - intent: home_location
+  - action: utter_link
+
+- story: hw
+  steps:
+  - intent: hw
+  - action: action_hello_world
+
+- story: medicine
+
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: medicine_series
+  - action: action_medicine
+
+- story: music1
+  steps:
+  - intent: play_music
+  - action: utter_incomprehension_content
+  - action: utter_manual_service
+  - action: utter_anything_else
+
+
+#- story: music2
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: play_music_disease
+#  - action: utter_music_link
+#  - intent: goodbye
+#  - action: utter_goodbye
+
+- story: music2
+  steps:
+  - intent: play_music_disease
+  - action: utter_music_link
+
+
+
+#- story: appiontment
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: make_appointment
+#  - action: utter_input
+#  - intent: user_input
+#  - action: action_appointment
+#  - intent: goodbye
+#  - action: utter_goodbye
+
+
+- story: appointment
+  steps:
+  - intent: make_appointment
+  - action: utter_input
+  - intent: user_input
+  - action: action_appointment
+
+- story: query_appointment
+  steps:
+  - intent: query_appointment
+  - action: utter_username
+  - intent: user_input_username
+  - action: action_queryappointment

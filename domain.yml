@@ -1,0 +1,135 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - hospital_location
+  - home_location
+  - hw
+  - medicine_series
+  - play_music
+  - play_music_disease
+  - make_appointment
+  - user_input
+  - query_appointment
+  - user_input_username
+
+
+responses:
+  utter_greet:
+  - text: "Hello, I'm the ‘WhatsUpDoc’ robot. How can I help you?"
+
+  utter_location:
+  - text: "OK，dear，please tell me your location?"
+
+  utter_link:
+  - text: "thank you for your coordination.here are the list of hospitals.click to see the address."
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+#  utter_medicine:
+#  - text: "{name} is good."
+
+  utter_incomprehension_content:
+  - text: "I can't understand what you mean by that"
+
+  utter_manual_service:
+  - text: "You can choose manual service. You can call 00358-110911329 or send your question to our email 110001010@oulu.fi."
+
+  utter_anything_else:
+  - text: "anything else i can help you?"
+
+  utter_music_link:
+  - text: "Here is the music you want to listen to to help you overcome diseases and difficulties. \n
+  https://cn.bing.com/*****************"
+
+  utter_input:
+  - text: "
+  Please enter your appointment name (ex: u1, u2...), \n
+  the name of the hospital you want to go to (ex: h1, h2), \n
+  and the time you want to make an appointment (the time is 24-hour, hourly) \n
+  Appointment time is limited to 9.00 to 17.00. \n
+  The input format is (u1 h2 14.00)."
+
+
+  utter_username:
+  - text: "Please provide your user name. "
+
+
+
+
+entities:
+- MEDICINE
+- USER_NAME
+- HOSPITAL_NAME
+- APPIONTMENT_TIME
+
+slots:
+
+  name:
+
+    type: text
+
+    influence_conversation: true
+
+    mappings:
+
+    - type: from_entity
+
+      entity: MEDICINE
+
+  username:
+
+    type: text
+
+    influence_conversation: true
+
+    mappings:
+
+    - type: from_entity
+
+      entity: USER_NAME
+
+  hospitalname:
+
+    type: text
+
+    influence_conversation: true
+
+    mappings:
+
+    - type: from_entity
+
+      entity: HOSPITAL_NAME
+
+  appointmenttime:
+
+    type: text
+
+    influence_conversation: true
+
+    mappings:
+
+    - type: from_entity
+
+      entity: APPIONTMENT_TIME
+
+actions:
+  - action_hello_world
+  - action_medicine
+  - action_appointment
+  - action_queryappointment
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
